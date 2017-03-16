@@ -70,6 +70,10 @@ class MealTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     //MARK: Actions
     
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
